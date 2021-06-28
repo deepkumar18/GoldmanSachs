@@ -3,29 +3,67 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		8EDBCFE826899E4100C6792A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBCFE726899E4100C6792A /* AppDelegate.swift */; };
 		8EDBCFEA26899E4100C6792A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBCFE926899E4100C6792A /* SceneDelegate.swift */; };
-		8EDBCFEC26899E4100C6792A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBCFEB26899E4100C6792A /* ViewController.swift */; };
-		8EDBCFEF26899E4100C6792A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDBCFED26899E4100C6792A /* Main.storyboard */; };
 		8EDBCFF226899E4100C6792A /* GoldmanSachs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBCFF026899E4100C6792A /* GoldmanSachs.xcdatamodeld */; };
 		8EDBCFF426899E4200C6792A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDBCFF326899E4200C6792A /* Assets.xcassets */; };
 		8EDBCFF726899E4200C6792A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDBCFF526899E4200C6792A /* LaunchScreen.storyboard */; };
+		8EDBD00326899ECB00C6792A /* AcitivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD00226899ECB00C6792A /* AcitivityIndicator.swift */; };
+		8EDBD00626899EE600C6792A /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD00526899EE600C6792A /* AppConstants.swift */; };
+		8EDBD01826899F9800C6792A /* ManagedObjectProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD00926899F9800C6792A /* ManagedObjectProtocol.swift */; };
+		8EDBD01A26899F9800C6792A /* GenericObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD00C26899F9800C6792A /* GenericObjectMapper.swift */; };
+		8EDBD01B26899F9800C6792A /* GenericModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD00D26899F9800C6792A /* GenericModel.swift */; };
+		8EDBD01C26899F9800C6792A /* DataBaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD00E26899F9800C6792A /* DataBaseManager.swift */; };
+		8EDBD01D26899F9800C6792A /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD01026899F9800C6792A /* ReusableProtocol.swift */; };
+		8EDBD01E26899F9800C6792A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD01226899F9800C6792A /* Utils.swift */; };
+		8EDBD01F26899F9800C6792A /* CustomExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD01426899F9800C6792A /* CustomExtension.swift */; };
+		8EDBD02026899F9800C6792A /* InternetReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD01626899F9800C6792A /* InternetReachability.swift */; };
+		8EDBD02126899F9800C6792A /* RestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD01726899F9800C6792A /* RestManager.swift */; };
+		8EDBD02B26899FE400C6792A /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD02526899FE400C6792A /* SearchResultsViewController.swift */; };
+		8EDBD02C26899FE400C6792A /* APIResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD02726899FE400C6792A /* APIResponseModel.swift */; };
+		8EDBD03126899FF600C6792A /* CityInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBD03026899FF600C6792A /* CityInformationViewController.swift */; };
+		8EE6827C2689A5EE00CC8854 /* CityInfoCD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6827A2689A5EE00CC8854 /* CityInfoCD+CoreDataProperties.swift */; };
+		8EE6827D2689A5EE00CC8854 /* CityInfoCD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE6827B2689A5EE00CC8854 /* CityInfoCD+CoreDataClass.swift */; };
+		8EE682812689ABDB00CC8854 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE682802689ABDB00CC8854 /* Main.storyboard */; };
+		8EE682842689BAF300CC8854 /* SearchedCityListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE682822689BAF300CC8854 /* SearchedCityListTableViewCell.swift */; };
+		8EE682852689BAF300CC8854 /* SearchedCityListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EE682832689BAF300CC8854 /* SearchedCityListTableViewCell.xib */; };
+		BC1B53FDE842B2A8DD3032DD /* Pods_GoldmanSachs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86703F1722514DC46A05920C /* Pods_GoldmanSachs.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		515B795A7490455BE926B879 /* Pods-GoldmanSachs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldmanSachs.debug.xcconfig"; path = "Target Support Files/Pods-GoldmanSachs/Pods-GoldmanSachs.debug.xcconfig"; sourceTree = "<group>"; };
+		86703F1722514DC46A05920C /* Pods_GoldmanSachs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldmanSachs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDBCFE426899E4100C6792A /* GoldmanSachs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldmanSachs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDBCFE726899E4100C6792A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EDBCFE926899E4100C6792A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8EDBCFEB26899E4100C6792A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8EDBCFEE26899E4100C6792A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8EDBCFF126899E4100C6792A /* GoldmanSachs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GoldmanSachs.xcdatamodel; sourceTree = "<group>"; };
 		8EDBCFF326899E4200C6792A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8EDBCFF626899E4200C6792A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8EDBCFF826899E4200C6792A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EDBD00226899ECB00C6792A /* AcitivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcitivityIndicator.swift; sourceTree = "<group>"; };
+		8EDBD00526899EE600C6792A /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		8EDBD00926899F9800C6792A /* ManagedObjectProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagedObjectProtocol.swift; sourceTree = "<group>"; };
+		8EDBD00C26899F9800C6792A /* GenericObjectMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericObjectMapper.swift; sourceTree = "<group>"; };
+		8EDBD00D26899F9800C6792A /* GenericModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericModel.swift; sourceTree = "<group>"; };
+		8EDBD00E26899F9800C6792A /* DataBaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBaseManager.swift; sourceTree = "<group>"; };
+		8EDBD01026899F9800C6792A /* ReusableProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableProtocol.swift; sourceTree = "<group>"; };
+		8EDBD01226899F9800C6792A /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		8EDBD01426899F9800C6792A /* CustomExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomExtension.swift; sourceTree = "<group>"; };
+		8EDBD01626899F9800C6792A /* InternetReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InternetReachability.swift; sourceTree = "<group>"; };
+		8EDBD01726899F9800C6792A /* RestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestManager.swift; sourceTree = "<group>"; };
+		8EDBD02526899FE400C6792A /* SearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		8EDBD02726899FE400C6792A /* APIResponseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseModel.swift; sourceTree = "<group>"; };
+		8EDBD03026899FF600C6792A /* CityInformationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityInformationViewController.swift; sourceTree = "<group>"; };
+		8EE6827A2689A5EE00CC8854 /* CityInfoCD+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CityInfoCD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8EE6827B2689A5EE00CC8854 /* CityInfoCD+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CityInfoCD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8EE682802689ABDB00CC8854 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8EE682822689BAF300CC8854 /* SearchedCityListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedCityListTableViewCell.swift; sourceTree = "<group>"; };
+		8EE682832689BAF300CC8854 /* SearchedCityListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchedCityListTableViewCell.xib; sourceTree = "<group>"; };
+		943E8EAC81783EDB61F66DB2 /* Pods-GoldmanSachs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldmanSachs.release.xcconfig"; path = "Target Support Files/Pods-GoldmanSachs/Pods-GoldmanSachs.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +71,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1B53FDE842B2A8DD3032DD /* Pods_GoldmanSachs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		488BB7F6A6375F9694A00863 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				515B795A7490455BE926B879 /* Pods-GoldmanSachs.debug.xcconfig */,
+				943E8EAC81783EDB61F66DB2 /* Pods-GoldmanSachs.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8EDBCFDB26899E4100C6792A = {
 			isa = PBXGroup;
 			children = (
 				8EDBCFE626899E4100C6792A /* GoldmanSachs */,
 				8EDBCFE526899E4100C6792A /* Products */,
+				488BB7F6A6375F9694A00863 /* Pods */,
+				FB184E0E8C7B79EA09E17BD5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,16 +108,185 @@
 		8EDBCFE626899E4100C6792A /* GoldmanSachs */ = {
 			isa = PBXGroup;
 			children = (
-				8EDBCFE726899E4100C6792A /* AppDelegate.swift */,
-				8EDBCFE926899E4100C6792A /* SceneDelegate.swift */,
-				8EDBCFEB26899E4100C6792A /* ViewController.swift */,
-				8EDBCFED26899E4100C6792A /* Main.storyboard */,
-				8EDBCFF326899E4200C6792A /* Assets.xcassets */,
-				8EDBCFF526899E4200C6792A /* LaunchScreen.storyboard */,
+				8EDBCFFE26899E6D00C6792A /* LaunchScreen */,
+				8EDBCFFF26899E9100C6792A /* AppBaseClasses */,
+				8EDBD00026899ECB00C6792A /* CommonViews */,
+				8EDBD00426899EE600C6792A /* ConfigAndConstants */,
+				8EDBD00726899F9800C6792A /* Helper */,
+				8EDBD02226899FB000C6792A /* Storyboard */,
+				8EDBD02326899FE400C6792A /* CitySearch */,
+				8EDBD02F26899FF600C6792A /* CityInformation */,
+				8EDBD0322689A01300C6792A /* Assests */,
 				8EDBCFF826899E4200C6792A /* Info.plist */,
-				8EDBCFF026899E4100C6792A /* GoldmanSachs.xcdatamodeld */,
 			);
 			path = GoldmanSachs;
+			sourceTree = "<group>";
+		};
+		8EDBCFFE26899E6D00C6792A /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBCFF526899E4200C6792A /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		8EDBCFFF26899E9100C6792A /* AppBaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBCFE726899E4100C6792A /* AppDelegate.swift */,
+				8EDBCFE926899E4100C6792A /* SceneDelegate.swift */,
+			);
+			path = AppBaseClasses;
+			sourceTree = "<group>";
+		};
+		8EDBD00026899ECB00C6792A /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD00126899ECB00C6792A /* ActivityIndicator */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		8EDBD00126899ECB00C6792A /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD00226899ECB00C6792A /* AcitivityIndicator.swift */,
+			);
+			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		8EDBD00426899EE600C6792A /* ConfigAndConstants */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD00526899EE600C6792A /* AppConstants.swift */,
+			);
+			path = ConfigAndConstants;
+			sourceTree = "<group>";
+		};
+		8EDBD00726899F9800C6792A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD00826899F9800C6792A /* DataBase */,
+				8EDBD00F26899F9800C6792A /* ProtocolReusable */,
+				8EDBD01126899F9800C6792A /* Utils */,
+				8EDBD01326899F9800C6792A /* Extensions */,
+				8EDBD01526899F9800C6792A /* NetworkLayer */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8EDBD00826899F9800C6792A /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				8EE6827B2689A5EE00CC8854 /* CityInfoCD+CoreDataClass.swift */,
+				8EE6827A2689A5EE00CC8854 /* CityInfoCD+CoreDataProperties.swift */,
+				8EDBD00926899F9800C6792A /* ManagedObjectProtocol.swift */,
+				8EDBD00C26899F9800C6792A /* GenericObjectMapper.swift */,
+				8EDBD00D26899F9800C6792A /* GenericModel.swift */,
+				8EDBCFF026899E4100C6792A /* GoldmanSachs.xcdatamodeld */,
+				8EDBD00E26899F9800C6792A /* DataBaseManager.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		8EDBD00F26899F9800C6792A /* ProtocolReusable */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD01026899F9800C6792A /* ReusableProtocol.swift */,
+			);
+			path = ProtocolReusable;
+			sourceTree = "<group>";
+		};
+		8EDBD01126899F9800C6792A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD01226899F9800C6792A /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		8EDBD01326899F9800C6792A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD01426899F9800C6792A /* CustomExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8EDBD01526899F9800C6792A /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD01626899F9800C6792A /* InternetReachability.swift */,
+				8EDBD01726899F9800C6792A /* RestManager.swift */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		8EDBD02226899FB000C6792A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8EE682802689ABDB00CC8854 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8EDBD02326899FE400C6792A /* CitySearch */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD02426899FE400C6792A /* Controller */,
+				8EDBD02626899FE400C6792A /* Model */,
+				8EDBD02826899FE400C6792A /* TVC */,
+			);
+			path = CitySearch;
+			sourceTree = "<group>";
+		};
+		8EDBD02426899FE400C6792A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD02526899FE400C6792A /* SearchResultsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8EDBD02626899FE400C6792A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD02726899FE400C6792A /* APIResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8EDBD02826899FE400C6792A /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				8EE682822689BAF300CC8854 /* SearchedCityListTableViewCell.swift */,
+				8EE682832689BAF300CC8854 /* SearchedCityListTableViewCell.xib */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		8EDBD02F26899FF600C6792A /* CityInformation */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBD03026899FF600C6792A /* CityInformationViewController.swift */,
+			);
+			path = CityInformation;
+			sourceTree = "<group>";
+		};
+		8EDBD0322689A01300C6792A /* Assests */ = {
+			isa = PBXGroup;
+			children = (
+				8EDBCFF326899E4200C6792A /* Assets.xcassets */,
+			);
+			path = Assests;
+			sourceTree = "<group>";
+		};
+		FB184E0E8C7B79EA09E17BD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				86703F1722514DC46A05920C /* Pods_GoldmanSachs.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +296,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EDBCFFB26899E4200C6792A /* Build configuration list for PBXNativeTarget "GoldmanSachs" */;
 			buildPhases = (
+				4E81278B6222439DBF081EFE /* [CP] Check Pods Manifest.lock */,
 				8EDBCFE026899E4100C6792A /* Sources */,
 				8EDBCFE126899E4100C6792A /* Frameworks */,
 				8EDBCFE226899E4100C6792A /* Resources */,
+				67685825B56BB630611F0E49 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,35 +350,86 @@
 			files = (
 				8EDBCFF726899E4200C6792A /* LaunchScreen.storyboard in Resources */,
 				8EDBCFF426899E4200C6792A /* Assets.xcassets in Resources */,
-				8EDBCFEF26899E4100C6792A /* Main.storyboard in Resources */,
+				8EE682812689ABDB00CC8854 /* Main.storyboard in Resources */,
+				8EE682852689BAF300CC8854 /* SearchedCityListTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4E81278B6222439DBF081EFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoldmanSachs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67685825B56BB630611F0E49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoldmanSachs/Pods-GoldmanSachs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoldmanSachs/Pods-GoldmanSachs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoldmanSachs/Pods-GoldmanSachs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8EDBCFE026899E4100C6792A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EDBCFEC26899E4100C6792A /* ViewController.swift in Sources */,
+				8EDBD01826899F9800C6792A /* ManagedObjectProtocol.swift in Sources */,
+				8EDBD01D26899F9800C6792A /* ReusableProtocol.swift in Sources */,
+				8EDBD00626899EE600C6792A /* AppConstants.swift in Sources */,
 				8EDBCFF226899E4100C6792A /* GoldmanSachs.xcdatamodeld in Sources */,
+				8EDBD02126899F9800C6792A /* RestManager.swift in Sources */,
+				8EDBD01E26899F9800C6792A /* Utils.swift in Sources */,
+				8EDBD01A26899F9800C6792A /* GenericObjectMapper.swift in Sources */,
 				8EDBCFE826899E4100C6792A /* AppDelegate.swift in Sources */,
+				8EDBD02C26899FE400C6792A /* APIResponseModel.swift in Sources */,
+				8EDBD02B26899FE400C6792A /* SearchResultsViewController.swift in Sources */,
+				8EDBD01B26899F9800C6792A /* GenericModel.swift in Sources */,
+				8EDBD00326899ECB00C6792A /* AcitivityIndicator.swift in Sources */,
+				8EDBD03126899FF600C6792A /* CityInformationViewController.swift in Sources */,
+				8EDBD02026899F9800C6792A /* InternetReachability.swift in Sources */,
 				8EDBCFEA26899E4100C6792A /* SceneDelegate.swift in Sources */,
+				8EE6827C2689A5EE00CC8854 /* CityInfoCD+CoreDataProperties.swift in Sources */,
+				8EE6827D2689A5EE00CC8854 /* CityInfoCD+CoreDataClass.swift in Sources */,
+				8EE682842689BAF300CC8854 /* SearchedCityListTableViewCell.swift in Sources */,
+				8EDBD01F26899F9800C6792A /* CustomExtension.swift in Sources */,
+				8EDBD01C26899F9800C6792A /* DataBaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8EDBCFED26899E4100C6792A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8EDBCFEE26899E4100C6792A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8EDBCFF526899E4200C6792A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +559,7 @@
 		};
 		8EDBCFFC26899E4200C6792A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 515B795A7490455BE926B879 /* Pods-GoldmanSachs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +579,7 @@
 		};
 		8EDBCFFD26899E4200C6792A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 943E8EAC81783EDB61F66DB2 /* Pods-GoldmanSachs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,7 +627,8 @@
 				8EDBCFF126899E4100C6792A /* GoldmanSachs.xcdatamodel */,
 			);
 			currentVersion = 8EDBCFF126899E4100C6792A /* GoldmanSachs.xcdatamodel */;
-			path = GoldmanSachs.xcdatamodeld;
+			name = GoldmanSachs.xcdatamodeld;
+			path = ../../GoldmanSachs.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
