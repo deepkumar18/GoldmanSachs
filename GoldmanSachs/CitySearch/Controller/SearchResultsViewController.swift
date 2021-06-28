@@ -121,7 +121,10 @@ extension SearchResultViewController {
             showNoInternetConnectionAlert()
             return
         }
-        guard let url = URL(string: "http://api.openweathermap.org/data/2.5/forecast?q=\(searchString)&appid=d13e327862b35cb7739e985fcde1f070") else { return }
+        let baseUrl = Environment.Keys.baseURL.getData()
+        let appid = Environment.Keys.appID.getData()
+        
+        guard let url = URL(string: "\(baseUrl)q=\(searchString)&appid=\(appid)") else { return }
         rest.makeRequest(toURL: url, withHttpMethod: .get) { (results) in
             guard let response = results.response else { return }
             if response.httpStatusCode == 200 {

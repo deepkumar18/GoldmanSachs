@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E52A7CB268A17250014CACB /* Enviornement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E52A7C9268A17250014CACB /* Enviornement.swift */; };
+		8E52A7CC268A17250014CACB /* Prod.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 8E52A7CA268A17250014CACB /* Prod.xcconfig */; };
 		8EDBCFE826899E4100C6792A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBCFE726899E4100C6792A /* AppDelegate.swift */; };
 		8EDBCFEA26899E4100C6792A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBCFE926899E4100C6792A /* SceneDelegate.swift */; };
 		8EDBCFF226899E4100C6792A /* GoldmanSachs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EDBCFF026899E4100C6792A /* GoldmanSachs.xcdatamodeld */; };
@@ -37,6 +39,8 @@
 /* Begin PBXFileReference section */
 		515B795A7490455BE926B879 /* Pods-GoldmanSachs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldmanSachs.debug.xcconfig"; path = "Target Support Files/Pods-GoldmanSachs/Pods-GoldmanSachs.debug.xcconfig"; sourceTree = "<group>"; };
 		86703F1722514DC46A05920C /* Pods_GoldmanSachs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoldmanSachs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E52A7C9268A17250014CACB /* Enviornement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enviornement.swift; sourceTree = "<group>"; };
+		8E52A7CA268A17250014CACB /* Prod.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
 		8EDBCFE426899E4100C6792A /* GoldmanSachs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldmanSachs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDBCFE726899E4100C6792A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EDBCFE926899E4100C6792A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +91,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8E52A7C8268A17250014CACB /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				8E52A7C9268A17250014CACB /* Enviornement.swift */,
+				8E52A7CA268A17250014CACB /* Prod.xcconfig */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
 		8EDBCFDB26899E4100C6792A = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +131,7 @@
 				8EDBD02F26899FF600C6792A /* CityInformation */,
 				8EDBD0322689A01300C6792A /* Assests */,
 				8EDBCFF826899E4200C6792A /* Info.plist */,
+				8E52A7C8268A17250014CACB /* Configuration */,
 			);
 			path = GoldmanSachs;
 			sourceTree = "<group>";
@@ -350,6 +364,7 @@
 			files = (
 				8EDBCFF726899E4200C6792A /* LaunchScreen.storyboard in Resources */,
 				8EDBCFF426899E4200C6792A /* Assets.xcassets in Resources */,
+				8E52A7CC268A17250014CACB /* Prod.xcconfig in Resources */,
 				8EE682812689ABDB00CC8854 /* Main.storyboard in Resources */,
 				8EE682852689BAF300CC8854 /* SearchedCityListTableViewCell.xib in Resources */,
 			);
@@ -409,6 +424,7 @@
 				8EDBD00626899EE600C6792A /* AppConstants.swift in Sources */,
 				8EDBCFF226899E4100C6792A /* GoldmanSachs.xcdatamodeld in Sources */,
 				8EDBD02126899F9800C6792A /* RestManager.swift in Sources */,
+				8E52A7CB268A17250014CACB /* Enviornement.swift in Sources */,
 				8EDBD01E26899F9800C6792A /* Utils.swift in Sources */,
 				8EDBD01A26899F9800C6792A /* GenericObjectMapper.swift in Sources */,
 				8EDBCFE826899E4100C6792A /* AppDelegate.swift in Sources */,
@@ -443,6 +459,7 @@
 /* Begin XCBuildConfiguration section */
 		8EDBCFF926899E4200C6792A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E52A7CA268A17250014CACB /* Prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -504,6 +521,7 @@
 		};
 		8EDBCFFA26899E4200C6792A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E52A7CA268A17250014CACB /* Prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

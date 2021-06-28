@@ -1,0 +1,17 @@
+//
+//  Prod.xcconfig
+//  GoldmanSachs
+//
+//  Created by Deep Kumar on 28/06/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+UNIVERSE = PRODUCTION
+
+/// Application ID Of The Weather API
+IRON_MAN = d13e327862b35cb7739e985fcde1f070
+
+/// Base URL
+FURY = http:/$()/api.openweathermap.org/data/2.5/forecast?
